@@ -11,6 +11,15 @@ This repository contains performance benchmarks comparing different web framewor
 
 This project aims to compare the performance characteristics of popular web frameworks when paired with different databases. The benchmarks help developers make informed decisions about their tech stack based on performance metrics.
 
+## Test Scenario
+
+All frameworks are tested using a single user registration endpoint (`POST /register`) to ensure fair comparison. The endpoint accepts a JSON payload with user information and creates a new user record in the respective database. This standardized approach allows us to measure:
+
+- Request handling speed
+- Database write performance
+- Overall framework efficiency
+- Response time consistency
+
 ## Stack Combinations
 
 ### Gin + MongoDB
